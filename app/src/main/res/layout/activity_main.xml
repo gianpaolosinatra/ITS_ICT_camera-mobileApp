@@ -11,24 +11,27 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Camera demo" />
+            android:text="CAMERA DEMO"
+            android:textAlignment="center"
+            android:textSize="36sp" />
 
         <Button
-            android:id="@+id/Bcamera"
+            android:id="@+id/BCAMERA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/almendra"
-            android:text="Button" />
+            android:fontFamily="@font/allura"
+            android:text="CAMERA"
+            android:textAlignment="center"
+            android:textSize="36sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button" />
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>

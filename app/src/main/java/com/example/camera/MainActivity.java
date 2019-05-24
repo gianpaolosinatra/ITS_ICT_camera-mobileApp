@@ -1,8 +1,7 @@
-package com.example.telecamera;
+package com.example.camera;
 
 import android.content.Intent;
 import android.graphics.Camera;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,18 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button b1 = (Button)findViewById(R.id.Bcamera);
+        Button b1 = (Button) findViewById(R.id.BCAMERA);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
-                intent.putExtra("name", "Demo");
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        activity_camera.class);
+
+                intent.putExtra("name","Demo");
+
+
                 startActivity(intent);
             }
-
-
         });
-
-
     }
 }
